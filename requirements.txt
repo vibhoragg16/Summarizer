@@ -28,4 +28,3 @@ pymupdf
 duckduckgo-search
 youtube_transcript_api
 unstructured
-subprocess
