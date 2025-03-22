@@ -1,4 +1,12 @@
+import subprocess
 import streamlit as st
+
+st.write("Checking installed dependencies...")
+
+installed_packages = subprocess.run(["pip", "freeze"], capture_output=True, text=True)
+st.text(installed_packages.stdout)  # Print installed packages
+
+
 from pydantic import HttpUrl, ValidationError
 from langchain.prompts import PromptTemplate
 from langchain_groq import ChatGroq
