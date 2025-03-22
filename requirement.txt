@@ -20,7 +20,7 @@ mysql-connector-python
 SQLAlchemy
 validators
 wikipedia
-pydantic
+pydantic>=2.0
 pandas
 duckdb
 pymupdf
