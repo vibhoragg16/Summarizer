@@ -1,3 +1,13 @@
+import sys
+import os
+
+st.write(f"Python path: {sys.executable}")
+st.write(f"Virtual environment: {os.environ.get('VIRTUAL_ENV', 'Not detected')}")
+st.write(f"All sys paths: {sys.path}")
+
+
+pip install pydantic --force-reinstall
+
 import subprocess
 import streamlit as st
 
