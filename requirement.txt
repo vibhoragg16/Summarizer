@@ -1,3 +1,5 @@
+streamlit
+pydantic==2.5.2
 langchain
 python-dotenv
 ipykernel
@@ -27,4 +29,3 @@ duckduckgo-search
 youtube_transcript_api
 unstructured
 subprocess
-pydantic==2.5.2
