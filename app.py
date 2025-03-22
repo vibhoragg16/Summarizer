@@ -3,7 +3,7 @@ import os
 
 import subprocess
 import streamlit as st
-
+st.set_page_config(page_title="Langchain: Summarize Text from YT or Website")
 st.write(f"Python path: {sys.executable}")
 st.write(f"Virtual environment: {os.environ.get('VIRTUAL_ENV', 'Not detected')}")
 st.write(f"All sys paths: {sys.path}")
@@ -15,7 +15,7 @@ from langchain_community.document_loaders import YoutubeLoader, UnstructuredURLL
 from langchain.chains.summarize import load_summarize_chain
 
 ## Streamlit APP
-st.set_page_config(page_title="Langchain: Summarize Text from YT or Website")
+
 st.title("Langchain: Summarize Text from YT or Website")
 st.subheader("Summarize URL")
 
