@@ -1,3 +1,7 @@
+--no-cache-dir
+pip==24.0
+setuptools>=68.0.0
+wheel
 streamlit
 pydantic==1.10.8
 langchain
