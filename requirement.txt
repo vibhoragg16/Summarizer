@@ -26,5 +26,6 @@ pymupdf
 duckduckgo-search
 youtube_transcript_api
 unstructured
+subprocess
 --no-cache-dir
 pydantic==2.5.2
