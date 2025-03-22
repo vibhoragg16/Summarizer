@@ -1,12 +1,12 @@
 import sys
 import os
 
+import subprocess
+import streamlit as st
+
 st.write(f"Python path: {sys.executable}")
 st.write(f"Virtual environment: {os.environ.get('VIRTUAL_ENV', 'Not detected')}")
 st.write(f"All sys paths: {sys.path}")
-
-import subprocess
-import streamlit as st
 
 st.write("Checking installed dependencies...")
 
