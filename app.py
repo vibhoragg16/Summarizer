@@ -16,6 +16,14 @@ st.write("Checking installed dependencies...")
 installed_packages = subprocess.run(["pip", "freeze"], capture_output=True, text=True)
 st.text(installed_packages.stdout)  # Print installed packages
 
+try:
+    import pydantic
+    st.success(f"Pydantic is installed (version: {pydantic.__version__})")
+except ImportError:
+    st.error("Pydantic is not installed")
+    # Display installed packages
+    result = subprocess.run(['pip', 'list'], capture_output=True, text=True)
+    st.code(result.stdout)
 
 from pydantic import HttpUrl, ValidationError
 from langchain.prompts import PromptTemplate
