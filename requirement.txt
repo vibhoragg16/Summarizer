@@ -1,4 +1,3 @@
---no-cache-dir
 langchain
 python-dotenv
 ipykernel
